@@ -9,6 +9,7 @@ class Solution:
         for i in range(len(nums)):
             supplement = target - nums[i]
             if supplement in hash_table:
+                # ***if want to run the below sample, use print command instead of return in scripts***
                 # print([hash_table[supplement], i])
                 return [hash_table[supplement], i]
             hash_table[nums[i]] = i
